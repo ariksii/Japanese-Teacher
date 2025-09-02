@@ -1,8 +1,14 @@
 /* ===== Base ===== */
-:root{
-  --bg:#ffffff; --fg:#111111; --muted:#555; --line:#e5e7eb; --accent:#2563eb; /* 青 */
-  --radius:12px; --space:24px; --font:system-ui,-apple-system,Segoe UI,Roboto,Noto Sans JP,sans-serif;
+:root {
+  --bg: #fdfcf7;      /* 背景：柔らかいベージュ */
+  --fg: #2c2c2c;      /* 文字：濃いグレーで目に優しい */
+  --muted: #555555;   /* サブテキスト：落ち着いたトーン */
+  --line: #e0ddd5;    /* 区切り線：淡いベージュ寄り */
+  --accent: #d97706;  /* 強調色：温かみのあるオレンジ */
 }
+
+/* ダークモード切替は削除してライト固定 */
+
 @media (prefers-color-scheme: dark){
   :root{ --bg:#0b0c0f; --fg:#f3f4f6; --muted:#9aa1a9; --line:#1f2430; --accent:#60a5fa; }
 }
